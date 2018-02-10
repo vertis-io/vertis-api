@@ -33,7 +33,6 @@ const auth_controller = {
         } else {
           let password = data.password;
           bcrypt.compare(plaintext, password, (err, success) => {
-            console.log(err, success);
             if(err){
               res.sendStatus(500);
             } else if (success) {

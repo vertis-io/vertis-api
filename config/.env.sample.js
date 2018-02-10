@@ -10,7 +10,8 @@ const config = {
     RDS: {
       db: "",
       user: "",
-      password: ""
+      password: "",
+      PORT: ""
     }
   },
   AUTH: {

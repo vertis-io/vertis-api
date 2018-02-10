@@ -4,7 +4,7 @@ import User from './models/Users.js';
 db.authenticate()
   .then(()=>{
     console.log('Successfully connected to Vertis RDS');
-    User.sync({force: true})
+    User.sync()
       .then(() => {
         console.log("Users table sync'd")
       })
